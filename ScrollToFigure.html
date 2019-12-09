@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ScrollToFigure.css">
+</head>
+<body>
+    <!-- 用来装滚动条的盒子 -->
+    <div class="informBox" id="informBox">
+        <div class="centerBox" id="centerBox">
+            <div class="informPicture"><img src="images\a15.png" alt=""></div>
+            <div class="informCharcter"><p class="charcter" id="charcter">[温馨提示]最近有不少不法分子在网上骗人，请大家注意！！！</p></div>
+        </div>
+    </div>
+
+    <!-- 用来装整个滚动图片的内容 -->
+    <div class="frame" id="frame">
+        <!-- 装所用的图片 -->
+        <div class="boxForPicture" id = "boxForPicture">
+            <div class="picture"><img src="images\b5.png" alt=""></div>
+            <div class="picture"><img src="images\b1.png" alt=""></div>
+            <div class="picture"><img src="images\b2.png" alt=""></div>
+            <div class="picture"><img src="images\b3.png" alt=""></div>
+            <div class="picture"><img src="images\b4.png" alt=""></div>
+            <div class="picture"><img src="images\b5.png" alt=""></div>
+            <div class="picture"><img src="images\b1.png" alt=""></div>
+        </div>
+
+        <span id="left"> < </span>
+        <span id="right"> > </span>
+
+        <!-- 图下的点 -->
+        <ul class="pot" id="pot">
+            <li class="active" id="firstChild">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <!-- 引入外部js文件 -->
+    <script src="js\animate.js"></script>
+    <script src="ScrollToFigure.js"></script>
+</body>
+</html>
